@@ -102,12 +102,25 @@ public class MyStoreSteps {
         formPageObj.clickSaveButton();
     }
 
-    @Then("phrase Address successfully added is visible")
+    @And("check that phrase Address successfully added is visible")
     public void phraseAddressSuceffulyAddedIsVissible() {
         YourAccountPageObj yourAccountPageObj = new YourAccountPageObj(driver);
         Assertions.assertEquals("Address successfully added!", yourAccountPageObj.addressSuccessfullyAdded.getText());
-        //driver.quit();
+
+
     }
+    @And("clicked delted button under this new adress")
+    public void deleteNewAccount(){
+        YourAccountPageObj yourAccountPageObj = new YourAccountPageObj(driver);
+        yourAccountPageObj.deleteButton.click();
+    }
+    @Then("phrase Account is succefully deleted is visible")
+        public void checkingIfDeleted() {
+        YourAccountPageObj yourAccountPageObj = new YourAccountPageObj(driver);
+        Assertions.assertEquals("Address successfully deleted!", yourAccountPageObj.phraseSucceffulyDeleted.getText());
+
+    }
+
 
 
 

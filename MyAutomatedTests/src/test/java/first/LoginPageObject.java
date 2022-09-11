@@ -22,13 +22,8 @@ public class LoginPageObject {
     WebElement submitButton;
 
     public void loginAs(String email, String password) {
-        // WebElement emailInput = driver.findElement(By.xpath("//*[@id=\"login-form\"]/section/div[1]/div[1]/input"));
          emailInput.sendKeys(email);
-
-         //WebElement passInput = driver.findElement(By.xpath("//*[@id=\"login-form\"]/section/div[2]/div[1]/div/input"));
          passInput.sendKeys(password);
-
-         //WebElement submitButton = driver.findElement(By.id("submit-login"));
          submitButton.click();
     }
 }

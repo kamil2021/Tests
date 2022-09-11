@@ -24,7 +24,9 @@ Feature: User can log in using proper data
     And choose the country
     And check that data in form is correct
     And clicked on save button
-    Then phrase Address successfully added is visible
+    And check that phrase Address successfully added is visible
+    And clicked delted button under this new adress
+    Then phrase Account is succefully deleted is visible
   Examples:
     |alias|address  |city |zipCode |phone    |
     |Jacek|polna 7  |Mława|06-500   |933666666|

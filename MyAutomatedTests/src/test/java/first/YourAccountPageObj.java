@@ -16,10 +16,10 @@ public class YourAccountPageObj {
     WebElement newAddressesButton;
     @FindBy(css = "#notifications > div > article > ul > li")
     WebElement addressSuccessfullyAdded;
-//    @FindBy(css = "#address-28712 > div.address-footer > a:nth-child(2)")
-//    WebElement deleteButton;
-//    @FindBy(xpath = "//*[@id=\"notifications\"]/div/article/ul/li")
-//    WebElement phraseSucceffulyDeleted;
+    @FindBy(xpath = "/html/body/main/section/div/div/section/section/div[2]/article/div[2]/a[2]")
+     WebElement deleteButton;
+    @FindBy(xpath = "//*[@id=\"notifications\"]/div/article/ul/li")
+    WebElement phraseSucceffulyDeleted;
 
     public void clickOnAddressesButton() {
         newAddressesButton.click();
