@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="231397" name="ZestawTestów_KP" >
+<node_order><![CDATA[18]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="231552" name="W-FUN.1 Możliwość zarejestrowania prywatnego użytkownika">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test ma na celu sprawdzenie możliwości&nbsp;zarejestrowania prywatnego użytkownika</p>
+]]></summary>
+	<preconditions><![CDATA[<p>środowisko Windows 11 Home 64-bitowy system operacyjny, procesor x64&nbsp;&nbsp;</p>
+
+<p>Przeglądarka Chrome&nbsp;Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p>https://tester.codersguru.pl/register/</p>
+
+<p>zestaw poprawnych danych do zarejestrowania użytkownika indywidualnego</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wpisz poprawne Imię</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Imię wpisane w pole , brak komunikatu o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wpisz poprawne nazwisko</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Nazwisko wpisane w pole, brak komunikatu o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wpisz poprawne hasło</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Brak komunikatu o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Wpisz poprawne Miasto</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Miasto&nbsp;wpisane w pole, brak komunikatu o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Wpisz poprawny kod pocztowy</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kod pocztowy wpisany&nbsp;w pole, brak komunikatu o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Wpisz poprawną ulicę</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Ulica wpisana&nbsp;w pole, brak komunikatu o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Wpisz poprawny email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Email wpisany&nbsp;w pole, brak komunikatu o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>zaznacz pole zaakceptuj regulamin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>pole jest zaznaczone</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Wciśnij przycisk Zarejestr&oacute;j</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Użytkownik jest poprawnie zarejestrowany</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="231698" name="W-FUN.1 Weryfikacja walidacji formularza procesu rejestracyjnego użytkownika indywidualnego">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[73]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test ma na celu sprawdzenie czy aplikacja umożliwia zarejestrowanie się użytkownika indywidualnego kt&oacute;ry podaje niepoprawne dane rejestracyjne</p>
+]]></summary>
+	<preconditions><![CDATA[<p>środowisko Windows 11 Home 64-bitowy system operacyjny, procesor x64&nbsp; /&nbsp;11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz &nbsp; 2.69 GHz</p>
+
+<p>Przeglądarka Chrome&nbsp;Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p>https://tester.codersguru.pl/register/</p>
+
+<p>Zestaw niepoprawnych danych do zarejestrowania</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wpisz w pole imię max. 1 znak</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wpisz w pole Nazwisko max. 1 znak i przejdź do kolejnego pola</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wpisz w pole Hasło max . 4 znaki i przejdź do wypełnienia kolejengo pola</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Wpisz w pole Miasto max 1 znak, i przejdż do kolejnego pola</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Wpisz w pole kod pocztowy niepoprawny format np. 0-00, i przejdź do kolejnego pola</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Wpisz w pole ulica max. 1 znak i przejdź do kolejnego pola</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>wpisz w pole email w niepoprawnym formacie np. bez @&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>wpisz w pole ulica max. 1 znak, i i zaznacz pole zapoznałem się z regulaminem</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>wciśnij przycisk zarejestruj&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>brak możlwości zarejestrowania</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="231875" name="W-FUN.2 Weryfikacja możlwiości zarejestrowania użytkownika biznesowego">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[90]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test ma na celu sprawdzenie możliwości zarejestrowania użytkownika firmowego&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>środowisko Windows 11 Home 64-bitowy system operacyjny, procesor x64&nbsp;</p>
+
+<p>Przeglądarka Chrome&nbsp;Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p><a href="https://tester.codersguru.pl/register/">https://tester.codersguru.pl/register/</a></p>
+
+<p>Zestaw poprawnych danych do zalogowania</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Otw&oacute;rz aplikację pod adresem https://tester.codersguru.pl/register/ i zaznacz kafelek &#39;firma&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja z widocznym formularzem do wypełnienia zostaje wyświetlona</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Uzupełnij pola prawidłowymi danymi wg. poniższego wzoru :</p>
+
+<p>&bull; Pole &lsquo;Imię&rsquo; - minimum 2 znaku<br />
+&bull; Pole &lsquo;Nazwisko&rsquo; - minimum 2 znaku<br />
+&bull; Pole &lsquo;Hasło&rsquo; - minimum 5 znak&oacute;w<br />
+&bull; Pole &lsquo;Miasto- - minimum 2 znaki<br />
+&bull; Pole &lsquo;Kod pocztowy&rsquo; - format 00-000<br />
+&bull; Pole &lsquo;Ulica&rsquo; - minimum 2 znaku</p>
+
+<p>&bull; Pole &lsquo;NIP&rsquo; - ciąg 10 cyfr</p>
+
+<p>oraz zaznacz zgodę zgodę z egulaminem</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Każde z p&oacute;l zostaje wypełnione . Brak komunikat&oacute;w o błędach</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kliknij przycisk zarejestr&oacute;j</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Użytkownik firmowy jest poprawnie zarejestrowany</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232027" name="W-FUN.2 Weryfikacja poprawności walidacji pól formularza rejestracji użytkownika firmowego">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[113]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy aplikacja zachowa się zgodnie z W-FUN.2 &nbsp;w przypadku podania danych niezgodnych z specyfikacją</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home&nbsp; 21H2 64-bitowy system operacyjny, procesor x64</p>
+
+<p>Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p><a href="https://tester.codersguru.pl/register/">https://tester.codersguru.pl/register/</a></p>
+
+<p>Zestaw niepoprawnych danych do rejestracji</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Otw&oacute;rz stronę&nbsp;<a href="https://tester.codersguru.pl/register/">https://tester.codersguru.pl/register/</a></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się strona&nbsp;https://tester.codersguru.pl/register/ z formularzem rejestracji</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Kliknij pole &#39;firma&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświtla się formularz przeznaczony dla klienta biznesowego</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W polach <strong>imię, nazwisko, miasto, ulica, nip, hasło</strong> wpisz jeden znak a w polu <strong>&#39;kod pocztowy&#39; </strong>format inny niż 00-000</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Po uzupełnieniu każdego z p&oacute;ł powinien pokazać się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232042" name="W-BEZ.3 Walidacja haseł niedopuszczalnych podczas rejestracji użytkownika indywidualnego">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[115]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>test ma na celu sprawdzenie walidacji haseł niedopuszczalnych: pustych, takich samych jak nazwa<br />
+użytkownika, kt&oacute;rych częścią jest imię i nazwisko użytkownika lub nazwa<br />
+podmiotu gospodarczego.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p>https://tester.codersguru.pl/register/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>wejdź na https://tester.codersguru.pl/register/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się formularz rejestracji użytkownika indywidualnego</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Uzupełnij wszytkie pola poprawnymi danymi za wyjątkiem pola &#39;hasło&#39; kt&oacute;re ma być puste następnie zaznacz pole &#39;akceptuje regulamin&#39; i kliknij &#39;zarejestr&oacute;j&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>brak możliwości zarejestrowania, wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Uzupełnij wszytkie pola poprawnymi danymi za wyjątkiem pola &#39;hasło&#39; kt&oacute;re ma być <strong>takie samo jak nazwa użytkownika</strong>&nbsp;następnie zaznacz pole &#39;akceptuje regulamin&#39; i kliknij &#39;zarejestr&oacute;j&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Brak możliwości rejestracji, wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Uzupełnij wszytkie pola poprawnymi danymi za wyjątkiem pola&nbsp;&#39;hasło&#39;, kt&oacute;re <strong>ma zawierać w sobie imię użytkownika&nbsp;</strong> następnie zaznacz pole &#39;akceptuje regulamin&#39; i kliknij &#39;zarejestr&oacute;j&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Brak możliwości rejestracji, wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Uzupełnij wszytkie pola poprawnymi danymi za wyjątkiem pola&nbsp;&#39;hasło&#39;, kt&oacute;re <strong>ma zawierać w sobie nazwisko&nbsp;użytkownika&nbsp;</strong> następnie zaznacz pole &#39;akceptuje regulamin&#39; i kliknij &#39;zarejestr&oacute;j&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Brak możliwości rejestracji, wyświetla się komunikat o błędzie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>wejdź na https://tester.codersguru.pl/register/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się formularz rejestracji użytkownika indywidualnego</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>wejdź na https://tester.codersguru.pl/register/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wyświetla się formularz rejestracji użytkownika indywidualnego</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232060" name="W-BEZ.3 Walidacja haseł niedopuszczalnych podczas rejestracji klienta biznesowego">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[116]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>test sprawdzający walidację haseł niedopuszczalnych: pustych, takich samych jak nazwa<br />
+użytkownika, kt&oacute;rych częścią jest imię i nazwisko użytkownika lub nazwa<br />
+podmiotu gospodarczego w przypadku rejestracji użytkownika firmowego</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 21H2 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p><a href="https://tester.codersguru.pl/register/">https://tester.codersguru.pl/register/</a></p>
+
+<p>Zestaw danych potrzebnych do zarejestrowania nowego użytkownika firmowego&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wejdź na&nbsp;<a href="https://tester.codersguru.pl/register/">https://tester.codersguru.pl/register/</a></p>
+
+<p>kliknij pole &#39;firma&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się formularz rejestracyjny dla użytkownika firmowego</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W polach imię, nazwisko, miasto, ulica, kod pocztowy, nip,&nbsp; nazwa firmy wpisz poprawne dane a pole <strong>hasło&nbsp; pozostaw puste,&nbsp;</strong>puźniej zaznacz regularmin użytkowania i kliknij pole zarejestruj</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komuniakt o błędzie, brak możliwości rejestracji</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W polach imię, nazwisko, miasto, ulica, kod pocztowy, nip,&nbsp; nazwa firmy wpisz poprawne dane a pole <strong>hasło&nbsp; wpisz wartość tak samą jak imię&nbsp;</strong>puźniej zaznacz regularmin użytkowania i kliknij pole zarejestruj</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o błędzie, brak możliwości rejestracji</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>W polach imię, nazwisko, miasto, ulica, kod pocztowy, nip,&nbsp; nazwa firmy wpisz poprawne dane a pole <strong>hasło&nbsp; wpisz wartość tak samą jak nazwisko&nbsp;</strong>puźniej zaznacz regularmin użytkowania i kliknij pole zarejestruj</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o błędzie, brak możliwości rejestracji</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>W polach imię, nazwisko, miasto, ulica, kod pocztowy, nip,&nbsp; nazwa firmy wpisz poprawne dane a pole <strong>hasło&nbsp; wpisz wartość tak samą jak nazwa podmiotu gospodarczego&nbsp;</strong>puźniej zaznacz regularmin użytkowania i kliknij pole zarejestruj</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o błędzie, brak możliwości rejestracji</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232145" name="W-FUN.3 -Możliwość zalogowania zarejestrowanego użytkownika (-)">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[129]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test ma na celu sprawdzenie czy zarejestrowany użytkownik indywidualny i biznesowy może się zalogować</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 21H2 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bit)</p>
+
+<p><a href="https://tester.codersguru.pl/login">https://tester.codersguru.pl/login</a></p>
+
+<p>Zestaw poprawnych danych do zalogowania</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wejdź na&nbsp;<a href="https://tester.codersguru.pl/login">https://tester.codersguru.pl/login</a></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się formularz logowania</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W polu E-mail i Hasło wpisz dane do logowania użytkownia zarejestrowanego</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Użytkownik zostaje poprawnie zalogowany</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232171" name="W-FUN.5  W-FUN.6 Możliwość wybrania mentora z listy dostępnych mentorów">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[135]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>test ma na celu sprawdzenie możliwości wybrania mentora z listy dostępnych mentor&oacute;w oraz filtrowania mentor&oacute;w wedł&oacute;g kurs&oacute;w&nbsp;przez zalogowanego użytkownika&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 21H2 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p><a href="https://tester.codersguru.pl/login">https://tester.codersguru.pl/login</a></p>
+
+<p>Poprawne dane do zalogowania</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wejdź na&nbsp;<a href="https://tester.codersguru.pl/login">https://tester.codersguru.pl/login</a>&nbsp;i wpisz poprawne dane do zalogowania</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>użytkownik zostaje poprawnie zalogowany</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Z dostępnych opcji wybierz technologie kt&oacute;ra ma przypisanych mentor&oacute;w i kliknij&nbsp; &nbsp; &nbsp;&#39; znajdź mentora&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja wyświetla listę dostępnych mentor&oacute;w dla każdej z dostępnych technologii&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kliknij &#39;rezerwuj&#39; kolejno pod każdym z mentor&oacute;w</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>W przypadku każdego mentora powinno wyświetlić się okno z opcją um&oacute;wienia się na konsultajce</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232276" name="W-FUN.11 System umożliwia zarządzanie profilem klienta „Moje konto”.">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[151]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test sprawdzający czy system umożliwia zarządzanie profilem klienta &bdquo;Moje konto&rdquo;.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 21H2 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p>https://tester.codersguru.pl/login/</p>
+
+<p>istniejący zarejestrowny użytkownik</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wejdź na&nbsp;https://tester.codersguru.pl/login/ wpisz poprawne dane i kliknij pole zaloguj</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja poprawnie loguje urzytkownika i wyświetla ekran startowy</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W prawym g&oacute;rnym rogu kliknij ikonę &#39;koła zębatego&#39;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja wyświela ekran z Danymi urzytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kliknij kolejno w każde pole i zmień wartość wszystkich p&oacute;l na inne poprawne</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja umożliwia Edycje oraz zmianę danych profilu urzytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232345" name="W-INT.1 Integracja z systemem płatności online">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[155]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test umożliwia sprawdzenie integracji z systemem płatności online</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 21H2 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)<br />
+<a href="https://tester.codersguru.pl/login">https://tester.codersguru.pl/login</a></p>
+
+<p>Dane do konta bankowego z kt&oacute;rego można dokonać płatności</p>
+
+<p>Zarejestrowany użytkownik w aplikacji CodersGuru</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>wejdź na <a href="https://tester.codersguru.pl/search?tag=AJAX">https://tester.codersguru.pl/search?tag=AJAX</a></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawnie wyświetla się strona z możliwością dokonania rezerwacji</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Wybierz datę godzinę opisz problem i kliknij &#39; zamawiam i płacę&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja przenosi użytkownika do aplikacji zewnętrznej umożliwiajcej dokonanie płatnosci online</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232555" name="W-FUN.5 Możliwość wybrania mentora z listy dostępnych mentorów">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[185]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test ma na celu spawdzenie możliwośći wybrania mentora z listy dostępnych mentor&oacute;w</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 21H2 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p><a href="https://tester.codersguru.pl/login">https://tester.codersguru.pl/login</a></p>
+
+<p>Dane do zalogowania zarejestrowanego wcześniej użytkownika</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wejdź na stronę&nbsp;<a href="https://tester.codersguru.pl/">https://tester.codersguru.pl/</a>&nbsp;kliknij zaloguj następnie wpisz poprawne dane do zalogowania</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja&nbsp; loguje użytkownika i przenosi na ekran startowy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Znajdź opcję po kliknięciu kt&oacute;rej aplikacja wyświetli listę dostępnych mentor&oacute;w</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja wyświetla listę dostępnych mentor&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wybierz jedengo z mentor&oacute;w</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja umorzliwia wybranie mentora z listy dostępnych mentor&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232612" name="W-FUN.6 Możliwość filtrowania / wyszukiwania mentorów według kursów.">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[196]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test mający na celu sprawdzenie możliwości filtrowania / wyszukiwania mentor&oacute;w według kurs&oacute;w.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 21H2 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p>https://tester.codersguru.pl/login</p>
+
+<p>Dane do zalogowania zarejestrowanego użytkownika</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wejdź na&nbsp;<a href="https://tester.codersguru.pl/login">https://tester.codersguru.pl/login</a>&nbsp;oraz wpisz poprawne dane do zalogowania</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja poprawnie loguje użytkownika i wyświetla ekran startowy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybierz kolejno każdy z kurs&oacute;w&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja dla każdego z kurs&oacute;w powinna wyświetlić listę odstępnych mentor&oacute;w dla danego kursu</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wejdź na&nbsp;<a href="https://tester.codersguru.pl/login">https://tester.codersguru.pl/login</a>&nbsp;oraz wpisz poprawne dane do zalogowania</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja poprawnie loguje użytkownika i wyświetla ekran startowy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232665" name="W-FUN.7 Profil wykładowcy zawiera zdjęcie, doświadczenie, technologie oraz  najbliższe wolne terminy">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[205]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test sprawdza czy profil wykładowcy zawiera zdjęcie, doświadczenie, technologie oraz</p>
+
+<p>najbliższe wolne terminy.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Windows 11 Home 21H2 64-bitowy system operacyjny, procesor x64<br />
+Chrome Wersja 101.0.4951.67 (Oficjalna wersja) (64-bitowa)</p>
+
+<p>Zarejestrowany użytkownik</p>
+
+<p>https://tester.codersguru.pl/login</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Wejdź na&nbsp;<a href="https://tester.codersguru.pl/login">http://tester.codersguru.pl/login</a>&nbsp;wpisz dane do&nbsp;logowania i kliknij zaloguj</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja loguje użytkownika i przenosi do ekranu startowego</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybierz kolejno technologie i wybierz kolejno każdego mentora przypisanego do każdej z technologi</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja wyświetla listę dostępnych mentor&oacute;w dla każdej dostępnej technologii</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Po wyświetleniu listy dostępnych&nbsp;mentor&oacute;w kliknij na jednego z mentor&oacute;w</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja wyświetla profil mentora z widocznym zdjęciem, doświadczeniem, technologiami oraz najbliższych wolnych terminach</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>
