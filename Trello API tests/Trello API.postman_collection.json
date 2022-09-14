@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "3f7bb5d4-f76f-4e08-8c4e-787e734cef7f",
+		"name": "Trello API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20632507"
+	},
+	"item": [
+		{
+			"name": "Trello API",
+			"item": [
+				{
+					"name": "List of Boards",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/1/members/me/boards?key=8ff2cba29bf5ee70ccae48340d95256f&token=fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"members",
+								"me",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "8ff2cba29bf5ee70ccae48340d95256f"
+								},
+								{
+									"key": "token",
+									"value": "fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Board name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/62c560d527263566ae78cc15?key=8ff2cba29bf5ee70ccae48340d95256f&token=fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78&name=Welcom in Testing Api World",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"62c560d527263566ae78cc15"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "8ff2cba29bf5ee70ccae48340d95256f"
+								},
+								{
+									"key": "token",
+									"value": "fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78"
+								},
+								{
+									"key": "name",
+									"value": "Welcom in Testing Api World"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRUD trello",
+			"item": [
+				{
+					"name": "Creating new Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"new_board_id\", jsonData.id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/?key=8ff2cba29bf5ee70ccae48340d95256f&token=fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78&name=Nowa Tablica",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "8ff2cba29bf5ee70ccae48340d95256f"
+								},
+								{
+									"key": "token",
+									"value": "fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78"
+								},
+								{
+									"key": "name",
+									"value": "Nowa Tablica"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List of Boards",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/1/members/me/boards?key=8ff2cba29bf5ee70ccae48340d95256f&token=fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"members",
+								"me",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "8ff2cba29bf5ee70ccae48340d95256f"
+								},
+								{
+									"key": "token",
+									"value": "fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Board name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{new_board_id}}?key=8ff2cba29bf5ee70ccae48340d95256f&token=fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78&name=Zaktualizowana Tablica",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{new_board_id}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "8ff2cba29bf5ee70ccae48340d95256f"
+								},
+								{
+									"key": "token",
+									"value": "fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78"
+								},
+								{
+									"key": "name",
+									"value": "Zaktualizowana Tablica"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{new_board_id}}?key=8ff2cba29bf5ee70ccae48340d95256f&token=fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{new_board_id}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "8ff2cba29bf5ee70ccae48340d95256f"
+								},
+								{
+									"key": "token",
+									"value": "fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "Trello token",
+			"value": "fb648b7e23ecffdeeda8b02a3e79a1999c44b8d9c4d3dd061f2fedd7b0f8ae78"
+		},
+		{
+			"key": "Trello key",
+			"value": "8ff2cba29bf5ee70ccae48340d95256f"
+		}
+	]
+}
