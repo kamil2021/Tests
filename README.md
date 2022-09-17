@@ -7,6 +7,6 @@ proces zakupu produktu end to end.
 
 W Folderze Test Scenario examples umieściłem przykładowe scenariusze testów różnych apliakcji
 
-Folder Trello API tests zawiera testy API aplikacji Trello stowrzone w Postmanie. 
+Folder Trello API tests zawiera testy API aplikacji Trello stworzone w Postmanie. 
 Wykorzystuję w nich metody GET, POST, PUT, DELETE oraz asercję sprawdzającą czy test zwraca kod 200
 
